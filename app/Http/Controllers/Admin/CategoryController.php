@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Post;
 use App\Category;
+use Illuminate\Support\Str;
 
 class CategoryController extends Controller
 {
@@ -46,6 +47,8 @@ class CategoryController extends Controller
         $data = $request->all();
         $newCategory = new Category();
         $newCategory->name = $data['name'];
+        $slug = Str::of($data['name'])->slug('-');
+        $newCategory->slug = $slug;
 
         $newCategory->save();
         return redirect()->route('admin.categories.show', $newCategory->id);
@@ -86,6 +89,8 @@ class CategoryController extends Controller
     {
         $data = $request->all();
         $category->name = $data['name'];
+        $slug = Str::of($data['name'])->slug('-');
+        $category->slug = $slug;
 
         $category->save();
         return redirect()->route('admin.categories.show', $category->id);
