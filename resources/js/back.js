@@ -31,13 +31,15 @@ const app = new Vue({
     el: '#app',
     data:{
         currentForm: null,
-        postid: null
+        postid: null,
+        categoryid: null
     },
     methods:{
         openModal(e,id){
             e.preventDefault();
             console.log(id);
             this.postid = id;
+            this.categoryid = id;
             console.log(e.currentTarget);
             this.currentForm= e.currentTarget.parentNode;
             console.log(this.currentForm);

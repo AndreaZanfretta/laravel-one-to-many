@@ -31,3 +31,22 @@ table{
 .black{
     color: black;
 }
+.categoryShow{
+
+    ul{
+        li{
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+.postsShow{
+    p{
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
