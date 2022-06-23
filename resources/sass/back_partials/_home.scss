@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('https://images4.alphacoders.com/176/176126.jpg');
+    color: white!important;
+}
+.navbar{
+    background-color: rgb(77, 77, 77)!important;
+    .container{
+        a{
+            color: white!important;
+        }
+    }
+}
+
+.card{
+    background-color: rgb(77, 77, 77)!important;
+}
+.dropdown-menu{
+    background-color: rgb(77, 77, 77)!important;
+}
+table{
+    color: white!important;
+    a{
+        color: white!important;
+    }
+}
+.black{
+    color: black;
+}
